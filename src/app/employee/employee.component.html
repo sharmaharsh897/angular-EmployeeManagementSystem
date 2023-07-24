@@ -1,0 +1,75 @@
+<!-- <div class="container-fluid g-0 p-2">
+    <div class="row g-0">
+        <div class="row g-0">
+            <div class="col-md-10 text-center">
+                <span class="name">{{employee.fullname | titlecase}}</span>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                 <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-success" (click)="editEmployeeCLicked()" >Edit</button>
+                    <button type="button" class="btn btn-outline-danger" (click)="deleteEmployeeClicked()">Delete</button>
+                 </div>
+            </div>
+        </div>
+        <div class="row g-0 mt-3">
+            <div class="col">
+                <table class="table table-hover mx-auto">
+                    <tbody>
+                        <tr>
+                            <td>
+                                Email:
+                            </td>
+                            <td>
+                                {{employee.email}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Location
+                            </td>
+                            <td>
+                                {{employee.location}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Contact Number:
+                            </td>
+                            <td>
+                                {{employee.mobile}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container-fluid g-0 p-2">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Emp. id</th>
+            <th>Fullname</th>
+            <th>Location</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>{{employee.id}}</th>
+            <td>{{employee.fullname | titlecase}}</td>
+            <td>{{employee.location}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.mobile}}</td>
+            <button type="button" class="btn btn-outline-success" (click)="editEmployeeCLicked()" >Edit</button>
+            <button type="button" class="btn btn-outline-danger" (click)="deleteEmployeeClicked()">Delete</button>
+        
+
+          </tr>
+          
+        </tbody>
+      </table>
+</div>
